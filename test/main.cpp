@@ -3,7 +3,7 @@
 
 
 fn add(int x, int y) {
-    return x+y;
+    return x + y;
 }
 
 program {
@@ -12,14 +12,18 @@ program {
     str c = "c";
     lock d = add(a, b);
     var e = "e";
-    
-    var f = vec(i32) {1, 2, 3, 4, 5};
+
+    var f = std::vector<i32>{1, 2, 3, 4, 5};
 
     println(d);
     println(e);
 
-    for (var z : f) {
-        println(z);
+    for (var g : f) {
+        println(g);
+    }
+
+    for (var h : f) {
+        println(h);
     }
 
     f.append(6);
