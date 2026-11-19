@@ -3,5 +3,7 @@
 #error "GNU C11 or later is required, compile with '-std=gnu11'"
 #endif
 
+#include "calt-imports.h"
+
 #include "calt-functions.h"
 #include "calt-keywords.h"
