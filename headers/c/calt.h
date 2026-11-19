@@ -5,11 +5,12 @@
 #error "GNU C11 or later is required, compile with '-std=gnu11'"
 #endif
 
+#pragma once
+
 
 //
 // IMPORTS
 //
-
 
 #include <stdio.h>
 #include <stdint.h>
@@ -17,7 +18,6 @@
 //
 // KEYWORDS
 //
-
 
 #define program int main()
 
@@ -41,7 +41,6 @@ typedef float f32;
 typedef double f64;
 
 typedef char str[];
-
 
 //
 // FUNCTIONS
