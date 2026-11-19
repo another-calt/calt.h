@@ -1,0 +1,6 @@
+*
+**/*
+!.gitignore
+!TESTS.md
+!c-link.h
+!cpp-link.hpp
