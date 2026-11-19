@@ -13,6 +13,8 @@
    See the License for the specific language governing permissions and
    limitations under the License.
    */
+
+
 //
 // CHECKS
 //
@@ -61,14 +63,17 @@ typedef char str[];
 // FUNCTIONS
 //
 
-#define println(out) _Generic((out), \
+#define println(out) _Generic(((out)), \
     int: printf("%d\n", (out)), \
+    int*: printf("%x\n", (out)), \
+    unsigned int: printf("%d\n", (out)), \
+    unsigned int*: printf("%x\n", (out)), \
     float: printf("%f\n", (out)), \
     double: printf("%f\n", (out)), \
     char: printf("%c\n", (out)),  \
     char*: printf("%s\n", (out)),  \
     const char*: printf("%s\n", (out)),  \
-    default: printf("[unknown print type]"))
+    default: printf("[unknown print type]\n"))
 
 
 
