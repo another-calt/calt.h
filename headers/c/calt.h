@@ -37,7 +37,8 @@
 // KEYWORDS
 //
 
-#define program int main()
+#define app int main(void)
+#define application() int main(int argc, char **argv)
 
 // assignment
 #define var __auto_type
