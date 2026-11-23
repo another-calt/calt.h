@@ -16,6 +16,7 @@ TL;DR, these are C dotfiles.
 
 - implicit typing
 - generic `prinf`
+- minimal `std::vector` implementation
 
 ## Contributing
 
